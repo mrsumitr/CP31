@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp",
+        "climits": "cpp",
+        "bitset": "cpp",
+        "vector": "cpp"
+    }
+}
