@@ -1,51 +1,44 @@
-//#include<bits/stdc++.h>
-#include<iostream>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cmath>
+#include <bitset>
+#include <climits>
+#include <unordered_map>
+#include <map>
+#include <set>
 using namespace std;
-#include<algorithm>
+
 #define ll long long
 #define fast_io ios::sync_with_stdio(false); cin.tie(nullptr);
-#include<vector>
-#include<cmath>
-#include<bitset>
 #define nline '\n'
-#include<climits>
-#include<unordered_map>
-#include<map>
-#include<set>
-bool check(ll n){
-    set<ll> digits;
-    
-    string s=to_string(n);
-    for(auto it: s){
-       int num=it-'0';
-        if(num!=0) digits.insert(num);
-    }
-    
 
-    for(auto i: digits){
-        if(n%i!=0) return false;
+bool check(ll n) {
+    ll temp = n;
+    while (temp > 0) {
+        int digit = temp % 10;
+        if (digit != 0 && n % digit != 0) {
+            return false; // early exit if not divisible
+        }
+        temp /= 10;
     }
     return true;
 }
 
-void solve(){
+void solve() {
     ll n;
-    cin>>n;
-    bool div=false;
-    div=check(n);
-    while(!div){
+    cin >> n;
+    while (!check(n)) {
         n++;
-        div=check(n);
     }
-    cout<<n<<endl;
+    cout << n << nline;
 }
 
-
-   
-int main(){
+int main() {
+    fast_io;
     int t;
-    cin>>t;
-    while(t--){
-    solve();
+    cin >> t;
+    while (t--) {
+        solve();
     }
 }
