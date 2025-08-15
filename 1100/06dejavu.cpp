@@ -15,7 +15,30 @@ using namespace std;
 
 
 void solve(){
-    
+    int n,q;
+    cin>>n>>q;
+    vector<int> v(n);
+    for(int i=0; i<n; i++){
+        cin>>v[i];
+    }
+    vector<int> b(q);
+    for(int i=0; i<q; i++){
+        cin>>b[i];
+    }
+    ll prev=31;
+    for(auto it: b){
+        if(it>=prev) continue;
+        int power=1<<it;
+        for(int i=0; i<n; i++){
+            if(v[i]%power==0) v[i]=v[i]+(1<<it-1);
+        }
+        prev=it;
+    }
+    for(int i=0; i<n; i++){
+      
+      cout<<v[i]<<" ";
+    }
+    cout<<endl;
 }
 
 
