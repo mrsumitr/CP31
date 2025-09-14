@@ -9,6 +9,7 @@
         "vector": "cpp",
         "ios": "cpp",
         "set": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "map": "cpp"
     }
 }
