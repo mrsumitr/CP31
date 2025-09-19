@@ -10,6 +10,7 @@
         "ios": "cpp",
         "set": "cpp",
         "cmath": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "algorithm": "cpp"
     }
 }

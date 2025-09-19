@@ -41,7 +41,7 @@ void solve(){
     }
     cout<<ma<<endl;
     
-   //int this we have to find those number who is not at thier postion, after that find &
+   //int0 this we have to find those number who is not at thier postion, after that find &
    // of all that numbers. 
 }
 
