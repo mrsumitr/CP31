@@ -1,29 +1,24 @@
-//#include<bits/stdc++.h>
 #include<iostream>
-using namespace std;
-#include<algorithm>
-#define ll long long
-#define fast_io ios::sync_with_stdio(false); cin.tie(nullptr);
 #include<vector>
-#include<cmath>
-#include<bitset>
+#include<algorithm>
+
+using namespace std;
+
+#define ll long long
 #define nline '\n'
-#include<climits>
-#include<unordered_map>
-#include<map>
-#include<set>
 
-
-void solve(){
-    
+void solve() {
+  
+   
 }
 
-
-   
-int main(){
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int t;
-    cin>>t;
-    while(t--){
-    solve();
+    cin >> t;
+    while (t--) {
+        solve();
     }
+    return 0;
 }
