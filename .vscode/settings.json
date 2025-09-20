@@ -11,6 +11,7 @@
         "set": "cpp",
         "cmath": "cpp",
         "map": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "list": "cpp"
     }
 }
