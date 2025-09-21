@@ -18,10 +18,22 @@ void solve(){
     
 ll n,k;
 cin>>n>>k;
-    vector<ll> v(n);
+    map<ll,ll> mp;
     for(int i=0; i<n; i++){
-        cin>>v[i];
+        ll data;
+        cin>>data;
+        mp[data]++;
     }
+
+    
+    
+    for(auto it: mp){
+        if(mp.find(it.first+k)!=mp.end() ||mp.find(it.first-k)!=mp.end() ){
+            cout<<"YES"<<endl;
+            return;
+        }
+    }
+    cout<<"NO"<<endl;
 
     
 

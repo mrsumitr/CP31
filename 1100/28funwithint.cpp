@@ -21,6 +21,24 @@ void solve(){
     for(int i=0; i<n; i++){
         cin>>v[i];
     }
+    ll size=1;
+    ll ele=v.back();
+    ll ans=0;
+    for(int i=n-2; i>=0; i++){
+        if(v[n-2]==ele){
+            size++;
+        }
+        else{
+            ans++;
+            ll run=size;
+            while(run){
+                i++;
+                size++;
+            }
+        }
+    }
+    cout<<ans<<endl;
+
     
 }
 
