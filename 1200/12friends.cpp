@@ -9,36 +9,10 @@ using namespace std;
 #define nline '\n'
 
 void solve() {
-
-    ll n;
-    cin>>n;
-    vector<ll> v(n);
-    map <ll,ll> mp;
-    for(int i=0; i<n; i++) 
-    {
-    cin>>v[i];
-    mp[v[i]]++;
-    }
-    ll ans=0;     
-    ll zero=0;
-    
-        for(auto &[ele,fre]: mp){
-            ans+=max(zero, mp[ele]-mp[ele-1]);
-        }
-
-
-
-        cout<<ans<<endl;
-
-
     
 
-
-    }
     
-
-     
-
+}
 
 int main() {
     ios::sync_with_stdio(false);
