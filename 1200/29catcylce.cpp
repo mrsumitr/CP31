@@ -44,7 +44,7 @@ void solve() {
         cout<<cB<<nline;
     }
     
-    
+  // this is wrong soln  
 }
 
 int main() {
