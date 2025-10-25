@@ -9,44 +9,38 @@ using namespace std;
 #define nline '\n'
 
 void solve() {
+    int n, s;
+    cin >> n >> s;
 
-    int n,s;
-    cin>>n>>s;
     vector<int> v(n);
-    int sum=0;
-    for(int i=0; i<n; i++) 
-    {cin>>v[i];
-    sum+=v[i];
-    }
+    for (int i = 0; i < n; i++)
+        cin >> v[i];
 
-    if(sum<s){
-        cout<<"-1"<<endl;
-        return;
-    }
+    int len = -1;
+    map<int, int> mp;
+    mp[0] = -1;
 
-    if(sum==s){
-        cout<<"0"<<endl;
-        return;
-    }
-    ll cnt=0;
-    int i=0;
-    int e=n-1;
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += v[i];
 
-    while(sum>s){
-        if(v[i]==1){
-            sum--;
-            i++;
-            cnt++;
+        if (mp.count(sum - s)) {
+            len = max(len, i - mp[sum - s]);
         }
-        if(v[e]==1){
-            sum--;
-            e--;
-            cnt++;
+
+        if (!mp.count(sum)) {
+            mp[sum] = i;
         }
-        
     }
-    
+
+    if (len == -1)
+        cout << "-1\n";
+    else
+        cout << (n - len) << "\n";
 }
+
+    
+
 
 int main() {
     ios::sync_with_stdio(false);
