@@ -8,7 +8,7 @@ using namespace std;
 #define ll long long
 #define nline '\n'
 #include<set>
-void solve() {
+void mrsumit() {
 
 
     
@@ -20,7 +20,7 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        solve();
+        mrsumit();
     }
     return 0;
 }
