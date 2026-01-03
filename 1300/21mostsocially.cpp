@@ -56,6 +56,13 @@ void mrsumit() {
         }
       }
     }
+    //      M-2 using simple iteration
+    //  for(int i = 1; i < n-1; i++) {
+    //     // Hill condition OR Crest condition
+    //     if((v[i] > v[i-1] && v[i] > v[i+1]) || (v[i] < v[i-1] && v[i] < v[i+1])) {
+    //         ans.push_back(v[i]);
+    //     }
+    // }
     ans.push_back(v[n-1]);
     cout<<ans.size()<<endl;
     for(auto it: ans){
