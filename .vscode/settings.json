@@ -13,5 +13,6 @@
         "map": "cpp",
         "algorithm": "cpp",
         "list": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
