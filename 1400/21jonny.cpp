@@ -14,13 +14,9 @@ void mrsumit() {
     ll ans=n;
     for(ll i=1; i<64; i++){
       ll divv=1LL<<i;
-      if(divv>n){
-        break;
-      }
-      else{
-        ans += n / divv;
+    ans += n / divv;
 
-      }
+      
     }
     cout<<ans<<endl;
 }
