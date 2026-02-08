@@ -18,8 +18,8 @@ void mrsumit() {
         break;
       }
       else{
-        ll range=n-(1LL<<(i-1))+1;
-        ans+=range/divv;
+        ans += n / divv;
+
       }
     }
     cout<<ans<<endl;
